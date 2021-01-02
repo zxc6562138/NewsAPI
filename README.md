@@ -1,1 +1,1 @@
-# NewsAPI
+# NewsAPI made by vue&vuex
