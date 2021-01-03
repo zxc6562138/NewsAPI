@@ -1,6 +1,6 @@
 # newsapi
 
-> A Vue.js project
+>  Use Vue&Vuex
 
 ## Build Setup
 
