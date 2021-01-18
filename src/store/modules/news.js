@@ -29,7 +29,7 @@ const actions = {
     var url = 'http://newsapi.org/v2/top-headlines?' +
           'country=us&' +
           'apiKey=1985ab2249f345d6bc5244a7e6571749';
-var req = new Request(url);
+    var req = new Request(url);
     fetch(req)                                                                                     
           
       .then(function(response) {

@@ -12,9 +12,12 @@
       </div>
       <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title"><a :href="item.url" target="_blank"> {{ item.title }}</a></h5>
-        <p class="card-text">{{ item.description }}</p>
+        <div class="ellipsis">
+          <h5 class="card-title"><a :href="item.url" target="_blank"> {{ item.title }}</a></h5>
+          <p class="card-text ">{{ item.description }}</p>
+        </div>          
         <p class="card-text"><small class="text-muted">出版日期：{{ item.publishedAt }}</small></p>
+        
       </div>
       </div>
       </div>
@@ -41,6 +44,8 @@ export default {
   created () {
     // created Hook 發出 action call API
     this.$store.dispatch('open1999');
+
+    
   },
   computed: mapGetters({
 
@@ -57,9 +62,15 @@ export default {
       
       return `${urlToImage}`;
     },
+    
+  },
 
-  },  
-};	
+  
+
+};
+
+
+
 
 
 
@@ -70,6 +81,17 @@ export default {
   a:link {
   text-decoration: none;
   }
+  .card{
+    min-height: 200px;
+  }
+  .ellipsis{
+    display: -webkit-box;
+    overflow:hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+  }
+  
+  
 
   
 </style>
