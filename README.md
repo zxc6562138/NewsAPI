@@ -1,6 +1,6 @@
 # newsapi
 
-> A Vue.js project
+> Breaking news Use by Vue&Vuex
 
 ## Build Setup
 
