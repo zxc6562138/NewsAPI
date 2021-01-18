@@ -1,6 +1,6 @@
 # newsapi
 
->  Use Vue&Vuex
+> Breaking news Use by Vue&Vuex
 
 ## Build Setup
 
